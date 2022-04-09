@@ -37,3 +37,9 @@ function createProfileCard(profiles) {
 
     return profile;
 }
+
+function init() {
+    createProfileCard(window.profile);
+}
+
+window.onload = () => init();
