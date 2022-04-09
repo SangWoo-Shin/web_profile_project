@@ -1,6 +1,7 @@
 
-.header {
+header {
     height: 50px;
     max-width: auto;
     background-color: rgb(179, 133, 206);
+    flex: 0;
 }

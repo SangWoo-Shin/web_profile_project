@@ -1,4 +1,4 @@
-window.profile = [
+window.profiles = [
     {
         name: "Sangwoo Shin",
         position: "Web Developer, Soft Engineer",
@@ -6,7 +6,8 @@ window.profile = [
     }
 ]
 
-const profile = window;
+const profiles = window;
+console.log({profiles}, "Store Data");
 
 function createProfileCard(profiles) {
     const profile = document.getElementById("profile");
@@ -39,7 +40,7 @@ function createProfileCard(profiles) {
 }
 
 function init() {
-    createProfileCard(window.profile);
+    createProfileCard(profiles);
 }
 
 window.onload = () => init();
