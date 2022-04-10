@@ -5,3 +5,8 @@ header {
     background-color: rgb(179, 133, 206);
     flex: 0;
 }
+
+main button {
+    background-color: rgb(179, 133, 206);
+    border-radius: 10px;
+}
