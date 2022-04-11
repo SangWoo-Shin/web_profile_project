@@ -20,7 +20,7 @@
 
         <main>
           <div class="profile">
-            <img src="./profile.jpg" width="250px" height="350px">
+            <img src="./profile.jpg">
             <h1>Sangwoo Shin</h1>
             <h2 class="animate-charcter">Web Developer</h2>
           </div>
@@ -155,7 +155,7 @@
                 </div>
                 <div class="city">
                       <label for="city"><span class="text-danger">*</span><b>City:  </b></label><br> 
-                  <input type="text" list="city" name="city" tabindex="7" size="25" placeholder="Enter your city" required>
+                  <input type="text" id="city" list="city" name="city" tabindex="7" size="25" placeholder="Enter your city" required>
                   <datalist id="city">
                       <option label="Brampton" value="Brampton"></option>
                       <option label="Calgary" value="Calgary"></option>
@@ -184,11 +184,11 @@
                       <option label="Woodbridge" value="Woodbridge"></option>
                       <option label="Yellowknife" value="Yellowknife"></option>
                 </datalist>
-                </div class="postalcode">
-                <div>
+                </div>
+                <div class="postalcode">
                   <label for="postalcode"><span class="text-danger">*</span><b>Postal Code:</b> </label><br> 
                       <input type="text" id="postalcode" title="Use format A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" name="postalcode" size="25" placeholder="Enter your postal code"required/>
-                </div><br>
+                </div>
               
               <div class="purpose">
                   <label for="purpose">
@@ -200,10 +200,10 @@
               </span>
               </div>
 
-              <div id="hr">
+              <div class="hr">
                   <label for="hr"><span class="text-danger">*</span> Hourly rate($): </label> 
                   <input type="number" id="Hourly_rate" name="Hourly_rate" size="15" placeholder="Enter Hourly rate"/>
-              </div><br>
+              </div>
 
               <div class="message">
                   <label for="message"> <b>Message: </b></label>
@@ -211,8 +211,7 @@
                   </textarea><br>
                   <small class="form-text text-muted">Optional</small> 
               </div>
-            
-              <br>
+              
               <div class="buttons">
                   <input type="reset" value="Clear">
                   <input type="submit" value="Submit">
@@ -224,8 +223,9 @@
         <script src="./js/profile.js"></script>
         <script src="./js/function.js"></script>
     </body>
+    <br><br><br><br>
+    <hr>
     <footer>
-      <br><hr /><br>
       <div style="text-align: center;">
           <a href="mailto:sshin36@myseneca.ca"><i class="fa-solid fa-envelope" style="color: white; font-size: 36px;"></i></a>
           <a href="https://github.com/SangWoo-Shin"><i class="fa-brands fa-github" style="color: white; font-size: 36px;"></i></a>
