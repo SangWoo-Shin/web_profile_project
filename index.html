@@ -26,14 +26,14 @@
           </div>
           <div id="profile"></div>
           <div id="buttons">
-            <button class="button1"><i class="fa-solid fa-download"></i>Resume</button>
-            <button class="button2">Contact Me</button>
+            <a href="Resume.docx" download><button class="button1"><i class="fa-solid fa-download"></i>Resume</button></a>
+            <a href = "#contactme"><button class="button2">Contact Me</button></a>
           </div>         
         </main>
 
         <section id="introduction">
           <div id="div1">
-            <div>
+            <div class="honesty">
                 <h1>About Me and Academic Honesty</h1>
                 <p><em>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
                     No part of this assessment has been copied manually or electronically from any other source
@@ -41,7 +41,7 @@
                     made available in this assessment for my use. I also declare that no part of this assignment
                     has been distributed to other students.</em></p>
             </div>
-            <div>
+            <div class="basic">
                 <h1>Basic Information</h1>
                 <ul>
                     <li><b><span>Name: </span></b> Sangwoo Shin</li>
@@ -56,11 +56,12 @@
           </div>
         </section >
 
-          <section>
+          <section class="education">
             <div id="education">
               <i class="fa-solid fa-user-graduate" style="font-size: 24px;"></i><h2>Education</h2>
             </div>
               <table>
+                <div class="table">
                 <tr>
                     <th id="period1">
                       <h2>Advanced Diploma</h2>
@@ -100,7 +101,7 @@
             <div class="more">
               <i class="fas fa-info-circle"></i><h1>More about me</h1>
             </div>
-            <p>Hello, I am a student born in <b style="color: rgb(108, 148, 223)">Korea</b>,    currently living in Toronto, Canada, and attending <b style="color: red">Seneca</b> College. Before I came to Canada, I studied chemical engineering at a Korean university, but I couldn't graduate and now I'm majoring in
+            <p class="detail">Hello, I am a student born in <b style="color: rgb(108, 148, 223)">Korea</b>,    currently living in Toronto, Canada, and attending <b style="color: red">Seneca</b> College. Before I came to Canada, I studied chemical engineering at a Korean university, but I couldn't graduate and now I'm majoring in
               <b style="color: rgb(145, 129, 236)">computer programming and analysis</b> at
               <b style="color: red">Seneca</b> College. Since I was in Korea, I have been interested in  or programming, and I chose this major because I wanted to study in that field in Canada. I like outdoor activities. Especially I do love go snowboarding. Since I really love pet, When I was 10 years old, I raised birds, tropical fishes and dog in my house. So I do really want to raise a dog in Canada in the future.</p>
             <div id="reflection">
@@ -114,7 +115,7 @@
           </section>
         
           <section class="contact">
-            <div id="contact">
+            <div id="contactme">
               <i id="call" class="fa-solid fa-phone" style="font-size: 24px;"></i>
               <h1><em>Contact Me</em></h1>
             </div>
@@ -138,21 +139,21 @@
                     <input type="text" id="lastname" name="name" tabindex="3" size="25" placeholder="Enter your Last Name" required/>
               </div>
 
-              <div>
+              <div class="email">
                   <label for="email"><span class="text-danger">*</span><b>Email: </b></label><br>  
                   <input type="email" id="email" name="email" tabindex="4" autocomplete="email" size="25" placeholder="Enter your e-mail"required/>
               </div>
-              <div>
+              <div class="phone">
                   <label for="phone"><b>Phone:  </b><br></label> 
                   <input type="tel" id="phone" name="phone" tabindex="5" autocomplete="tel" size="25" placeholder="Enter your Phone Number"/><br>
                   <small class="form-text text-muted">Optional</small> 
               </div>
 
-                <div>
+                <div class="address">
                     <label for="address"><span class="text-danger">*</span><b>Address: </b> </label><br>  
                     <input type="text" id="address" name="address" tabindex="6" autocomplete="street-address" size="50" placeholder="Enter your address"required/>
                 </div>
-                <div>
+                <div class="city">
                       <label for="city"><span class="text-danger">*</span><b>City:  </b></label><br> 
                   <input type="text" list="city" name="city" tabindex="7" size="25" placeholder="Enter your city" required>
                   <datalist id="city">
@@ -183,18 +184,18 @@
                       <option label="Woodbridge" value="Woodbridge"></option>
                       <option label="Yellowknife" value="Yellowknife"></option>
                 </datalist>
-                </div>
+                </div class="postalcode">
                 <div>
                   <label for="postalcode"><span class="text-danger">*</span><b>Postal Code:</b> </label><br> 
                       <input type="text" id="postalcode" title="Use format A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-z][0-9]" name="postalcode" size="25" placeholder="Enter your postal code"required/>
-                </div>
+                </div><br>
               
-              <div>
+              <div class="purpose">
                   <label for="purpose">
-                      <b>Purpose: </b></label>
-              <span id="radiobuttons">
-                  <input type="radio" id="hide" name="purpose" value="question"onclick="select()" checked/>Question
-                  <input type="radio" id="hide" name="purpose" value="comment" onclick="select()"/>Comment
+                      <b>Purpose: </b></label><br>
+              <span id="radiobuttons" >
+                  <input type="radio" id="question" name="purpose" value="question"onclick="select()" checked/>Question
+                  <input type="radio" id="comment" name="purpose" value="comment" onclick="select()"/>Comment
                   <input type="radio" id="hiring" name="purpose" value="hiring" onclick="select()"/>Hiring
               </span>
               </div>
@@ -202,9 +203,9 @@
               <div id="hr">
                   <label for="hr"><span class="text-danger">*</span> Hourly rate($): </label> 
                   <input type="number" id="Hourly_rate" name="Hourly_rate" size="15" placeholder="Enter Hourly rate"/>
-              </div>
+              </div><br>
 
-              <div>
+              <div class="message">
                   <label for="message"> <b>Message: </b></label>
                   <textarea form="contactform" rows="5" cols="80" name="message">
                   </textarea><br>
@@ -218,11 +219,20 @@
               </div>
               </form>
           </fieldset>
-      </div>
           </section>
         <script src="https://kit.fontawesome.com/8b502cfc5b.js" crossorigin="anonymous"></script>
         <script src="./js/profile.js"></script>
         <script src="./js/function.js"></script>
     </body>
+    <footer>
+      <br><hr /><br>
+      <div style="text-align: center;">
+          <a href="mailto:sshin36@myseneca.ca"><i class="fa-solid fa-envelope" style="color: white; font-size: 36px;"></i></a>
+          <a href="https://github.com/SangWoo-Shin"><i class="fa-brands fa-github" style="color: white; font-size: 36px;"></i></a>
+          <a href="https://www.instagram.com/s4ng_woo/"><i class="fa-brands fa-instagram" style="color: white; font-size: 36px;"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100004611037165"><i class="fa-brands fa-facebook" style="color: white; font-size: 36px;"></i></a>
+      </div><br>
+      <div style="color: white; text-align: center">&copy; 2022. &nbsp;ALL RIGHTS RESERVED</div>
+    </footer>
 </html>
 
