@@ -1,14 +1,359 @@
 
-header {
-    height: 50px;
-    max-width: auto;
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: white;
+    align-items: center;
+    background: #202b38;
+  }
+  
+  .profile img {
+    box-shadow: 0 0 20px rgb(188, 201, 226);
+  }
+  .profile {
     text-align: center;
-    margin-top: 0px;
-    background-color: rgb(179, 133, 206);
-    flex: 0;
-}
-
-main button {
-    background-color: rgb(179, 133, 206);
+  }
+  
+  .profile h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+    font-size: 48px;
+  }
+  
+  .animate-charcter
+  {
+    margin-top: 5px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 8s linear infinite;
+    display: inline-block;
+        font-size: 30px;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  header {
+    height: 65px;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  header a {
+    font-size: 36px;
+    color: white;
+  }
+  
+  header a:hover {
+    color: rgb(86, 185, 231);
+  }
+  
+  header i {
+    padding: 8px;
+  }
+  
+  
+  main img {
+    border-radius: 30px;
+    margin-bottom: 30px;
+    text-align: auto;
+    width: 250px;
+    height: 320px;
+  }
+  
+  main {
+    margin: auto;
+  }
+  
+  #div1 {
+    margin: auto;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #buttons { 
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5vw;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .button1 i {
+    padding-right:10px;
+  } 
+  
+  .button1,
+  .button2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    padding: 15px 25px;
+    border: none;
+    margin: 0 30px; 
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(137, 86, 167);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button1:hover,
+  .button2:hover {
+    color: rgb(97, 58, 119);
+  }
+  
+  .button1:active,
+  .button2:active {
+    background-color:rgb(57, 47, 99);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  
+  #introduction {
+    background: rgb(60, 50, 102);
+    margin: auto;
+    margin: 0 60px;
+    justify-content: center;
+    margin: 10px 0px;
+    border-radius: 60px;
+  }
+  
+  section div {
+    width: 500px;
+    padding: 10px 40px;
+    display: block;
+  }
+  
+  #education {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  #education h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    margin: auto;
+    background-color: #0f1d2e;
+    border-collapse: separate;
+    border-spacing: 0 2em;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  tbody {
+    padding: 50px 0;
+  }
+  
+  tr {
+    box-shadow: 0 0 20px rgb(188, 201, 226);
+  }
+  
+  th 
+  #period,
+  #period1,
+  #period2,
+  #period3 {
+    background: #999;
+    padding: 5px 20px;
+    margin: 10px 20px;
+      }
+  
+  td
+  #school,
+  #school1,
+  #school2,
+  #school3 {
+    background-color: aliceblue;
+    width: 500px;
+    color: rgb(85, 85, 85);
+    padding: 10px;
+    margin:10px 0px;
+  }
+  
+  #Detail p{
+    margin-bottom: 60px;
+  }
+  
+  .more {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .more i {
+    margin-top: 15px;
+    padding: 18px;
+    align-items: center;
+  }
+  
+  #reflection {
+    margin: auto;
+    display: flex;
+  }
+  
+  .youtube {
+    padding: 0 6em;
+  }
+  
+  .github {
+    padding: 0 6em;
+    text-align: center;
+  }
+  
+  #youtube {
+    color: white;
+    text-align: center;
+    margin-top: 6px;
+    padding-left: 22px;
+  
+  }
+  #ref {
+    margin-top: 12px;
+    padding-left: 7px;
+    font-size: 14px;
+  }
+  
+  #github {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  #git {
+    margin-top: 2px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  div#contact {
+    margin: auto;
+    display: flex;
+  }
+  
+  #call {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 6.5em;
+    display: flex;
+  }
+  
+  .contact {
+    background-color: #0f1d2e;
+  }
+  
+  .contact-table {
+    background-color: #0f1d2e;
+  }
+  
+  .text-danger {
+    color: red;
+    margin-top: 7px;
+    padding-right: 8px;
+  }
+  
+  fieldset {
+    padding-top: 40px;
+    max-width: 1024px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  form#contactfo {
+    display: grid;
+    max-width: 1024px;
+    min-width: 400px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  
+  
+  small {
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(199, 196, 196);
+  }
+  
+  form label {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    font-size:1.3em;
+  }
+  
+  input, textarea {
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    margin: 15px 0;
+    padding: 0.3em;
+    font-size:1.5em;
     border-radius: 10px;
-}
+    border: 1px solid rgb(206,212,218);
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: 2px solid lightskyblue;
+  }
+  
+  
+  input[type="submit"] {
+    font-family: 'Raleway', sans-serif;
+    width: 150px;
+    background-color: rgb(0,123,255);
+    border: none;
+    color: white;
+  }
+  
+  input[type="reset"] {
+    font-family: 'Raleway', sans-serif;
+    width: 150px;
+    background-color: rgb(78, 78, 78);
+    border: none;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    background-color: #1b3453;
+  }
+  
+  input[type="reset"]:hover,
+  input[type="reset"]:focus {
+    background-color: #202b38;
+  }
+  
+  .buttons {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+  }
