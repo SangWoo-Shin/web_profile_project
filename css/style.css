@@ -283,9 +283,21 @@ div#contact {
   text-align: center;
 }
 
+small {
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(199, 196, 196);
+}
+@media screen and (max-width: 740px) {
+  #contactfo input{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    font-size: 22px;
+  }
+}
 
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 640px) {
   .button1,
   .button2 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -293,7 +305,7 @@ div#contact {
   padding: 10px 20px;
   border: none;
   margin: 0 10px; 
-  font-size: 20px;
+  font-size: 14px;
   cursor: pointer;
   color: white;
   background-color: rgb(137, 86, 167);
@@ -301,7 +313,10 @@ div#contact {
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
+}
 
+@media screen and (max-width: 1024px) {
+  
   th 
   #period,
   #period1,
@@ -393,10 +408,49 @@ div#contact {
   
   .buttons {
     margin-top: 20px;
+    margin: 10px;
     padding: 10px;
   }
+
+  input, textarea {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0.8em;
+    border-radius: 10px;
+    border: 1px solid rgb(206,212,218);
+  }
+
+  #contactfo input, textarea{
+    width: calc(95% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    font-size: 22px;
+  }
+
+  #contactfo div {
+    display:block;
+    margin: 20px;
+  }
+
+  #radiobuttons {
+    display: flex;
+    padding: 20px 0;
+    margin-right: 50px;
+    align-items: center;
+  }
+
 }
 
+fieldset {
+  width: auto;
+  max-width: 1024px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
 @media screen and (min-width: 1024px) {
 
     
@@ -441,17 +495,6 @@ div#contact {
     margin-right: auto;
   }
   
-
-
-  fieldset {
-  
-    padding-top: 40px;
-    max-width: 1024px;
-    min-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-  }
   
   fieldset div {
     padding: 10px;
@@ -459,6 +502,7 @@ div#contact {
   
   
   form#contactfo {
+    padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(6, 140px);
     grid-template-rows: 10vh;
@@ -467,10 +511,10 @@ div#contact {
     font-size: 18px;
   }
   
-  #contactfo input, textarea {
+  #contactfo input{
     width: 240px;
     padding: 10px 20px;
-    font-size: 24px;
+    font-size: 22px;
   }
   .fname {
     grid-column: 1 / span 2;
@@ -532,10 +576,7 @@ div#contact {
     grid-column: 1 / span 6;
   }
   
-  small {
-    font-family: 'Times New Roman', Times, serif;
-    color:rgb(199, 196, 196);
-  }
+
   
   form label {
     font-family: 'Times New Roman', Times, serif;
@@ -543,29 +584,7 @@ div#contact {
     font-size:1.3em;
   }
   
-  #radiobuttons {
-    display: flex;
-    padding: 20px 0;
-    align-items: center;
-  }
-  
-  #question {
-    width: 40px;
-    padding: 0 10px;
-  }
-  
-  #comment {
-    width: 40px;
-    margin-left: 20px;
-    padding: 0 10px;
-  }
-  
-  #hiring {
-    width: 40px;
-    margin-left: 20px;
-    padding: 0 10px;
-  }
-  
+
   input, textarea {
     font-family: 'Times New Roman', Times, serif;
     width: 100%;
@@ -613,6 +632,12 @@ div#contact {
     display: flex;
     justify-content: center;
   } 
+  #radiobuttons {
+    display: flex;
+    padding: 20px 0;
+    padding-right: 40px;
+    align-items: center;
+  }
 }
 
 footer {
@@ -622,4 +647,21 @@ footer {
 hr {
   border-color: #666;
   margin-bottom: 5px;
+}
+
+#question {
+  width: 40px;
+  padding: 0 10px;
+}
+
+#comment {
+  width: 40px;
+  margin-left: 20px;
+  padding: 0 10px;
+}
+
+#hiring {
+  width: 40px;
+  margin-left: 20px;
+  padding: 0 10px;
 }
