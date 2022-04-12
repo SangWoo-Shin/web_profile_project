@@ -287,15 +287,6 @@ small {
   font-family: 'Times New Roman', Times, serif;
   color:rgb(199, 196, 196);
 }
-@media screen and (max-width: 740px) {
-  #contactfo input{
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 10px;
-    font-size: 22px;
-  }
-}
 
 @media screen and (max-width: 640px) {
   .button1,
