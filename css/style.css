@@ -415,7 +415,7 @@ small {
   }
 
   #contactfo input, textarea{
-    width: calc(95% - 10px);
+    width: calc(95% - 30px);
     padding: 5px 10px;
     font-size: 22px;
   }
@@ -436,15 +436,14 @@ small {
   }
 
 }
-
 fieldset {
-  width: auto;
-  max-width: 1024px;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-}
+    width: calc(100%);
+    max-width: 1024px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
 @media screen and (min-width: 1024px) {
 
     
