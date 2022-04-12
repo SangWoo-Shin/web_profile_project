@@ -400,11 +400,6 @@ small {
     background-color: #202b38;
   }
   
-  .buttons {
-    margin-top: 20px;
-    margin: 10px;
-    padding: 10px;
-  }
 
   input, textarea {
     font-family: 'Times New Roman', Times, serif;
@@ -413,13 +408,28 @@ small {
     border-radius: 10px;
     border: 1px solid rgb(206,212,218);
   }
+  input#clear {
+    width: auto;
+  }
+
+  input#submit {
+    width: auto;
+  }
 
   #contactfo input, textarea{
     font-family: 'Times New Roman', Times, serif;
-    width: calc(75%);
+    width: calc(80% - 20px);
     padding: 5px 10px;
     font-size: 22px;
     
+  }
+
+  input #firstname,
+  input #middlename {
+    font-family: 'Times New Roman', Times, serif;
+    width: calc(80% - 20px);
+    padding: 5px 10px;
+    font-size: 22px;
   }
 
   #contactfo div {
@@ -435,6 +445,7 @@ small {
   }
 
   .buttons {
+    width: 220px;
     display: flex;
   }
 
@@ -506,6 +517,7 @@ fieldset {
     grid-gap: 10px;
     justify-content: center;
     font-size: 18px;
+    margin: 0 50px;
   }
   
   #contactfo input{
