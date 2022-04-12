@@ -236,6 +236,8 @@ div#contact {
 .contact-table {
   background-color: #0f1d2e;
   padding-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-danger {
