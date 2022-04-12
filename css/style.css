@@ -558,7 +558,7 @@ fieldset {
   .purpose {
     grid-column: 1 / span 3;
   }
-  .hr {
+  #hr {
     grid-column: 4 / span 3;
   }
   input#Hourly_rate {
@@ -656,4 +656,8 @@ hr {
   width: 40px;
   margin-left: 20px;
   padding: 0 10px;
+}
+
+#hr {
+  display: none;
 }

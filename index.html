@@ -189,14 +189,14 @@
                   <label for="purpose">
                       <b>Purpose: </b></label><br>
               <span id="radiobuttons" >
-                  <input type="radio" id="question" name="purpose" value="question"onclick="select()" checked/>Question
-                  <input type="radio" id="comment" name="purpose" value="comment" onclick="select()"/>Comment
-                  <input type="radio" id="hiring" name="purpose" value="hiring" onclick="select()"/>Hiring
+                  <input type="radio" id="question" name="purpose" value="question"onclick="dynamic()" checked/>Question
+                  <input type="radio" id="comment" name="purpose" value="comment" onclick="dynamic()"/>Comment
+                  <input type="radio" id="hiring" name="purpose" value="hiring" onclick="dynamic()"/>Hiring
               </span>
               </div>
 
-              <div class="hr">
-                  <label for="hr"><span class="text-danger">*</span><b> Hourly rate($): </b></label><br>
+              <div id="hr">
+                  <label for="hr"><b> Hourly rate($): </b></label>
                   <input type="number" id="Hourly_rate" name="Hourly_rate"  placeholder="Enter Hourly rate"/>
               </div>
 

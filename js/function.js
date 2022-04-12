@@ -22,15 +22,15 @@ profile = {
     information.appendChild(card);
 
 
-function select()
+function dynamic()
 {
-    if(document.getElementById('hiring').checked)
+    if(document.getElementById("hiring").checked)
     {
-        document.getElementById('hr').style.display = "block";
+        document.getElementById("hr").style.display = "block";
     }
     else
     {
-        document.getElementById('hr').style.display = "none";
+        document.getElementById("hr").style.display = "none";
     }
     return;
 }
