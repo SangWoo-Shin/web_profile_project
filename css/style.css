@@ -423,14 +423,11 @@ small {
 
   #contactfo input, textarea{
     width: calc(95% - 30px);
-    margin-left: auto;
-    margin-right: auto;
     padding: 5px 10px;
     font-size: 22px;
   }
 
   #contactfo div {
-    display:block;
     margin: 20px;
   }
 
@@ -439,6 +436,10 @@ small {
     padding: 20px 0;
     margin-right: 50px;
     align-items: center;
+  }
+
+  .buttons {
+    display: flex;
   }
 
 }
