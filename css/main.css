@@ -366,6 +366,7 @@ input, select, textarea {
 	p.position {
 		font-weight: 700;
 		margin: 0;
+		text-align: start;
 		color: black;
 	}
 
@@ -375,11 +376,17 @@ input, select, textarea {
 	}
 
 	p.company {
+		text-align: start;
 		font-size: 16px;
 	}
 
 	p.location {
+		text-align: start;
 		font-size: 16px;
+	}
+
+	.content p {
+		text-align: start;
 	}
 
 	.row {
@@ -3509,7 +3516,7 @@ input, select, textarea {
 				}
 
 					#wrapper section > header {
-						padding: 0 8rem 0 4rem;
+						padding: 0 8rem 0 2rem;
 						width: 33rem;
 					}
 
@@ -3540,7 +3547,7 @@ input, select, textarea {
 				}
 
 					#wrapper > section > .content > section > header {
-						width: 30rem;
+						width: 35rem;
 					}
 
 				#wrapper > section.intro > header > * {
